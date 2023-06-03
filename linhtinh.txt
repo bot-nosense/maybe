@@ -1,3 +1,0 @@
-ngày 31-5
-    mình cần 1 giao diện console về việc lấy được tên lá bài
-    đẩy project database tarot lên pypi, sau đó install về để làm việc
