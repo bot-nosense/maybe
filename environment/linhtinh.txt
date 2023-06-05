@@ -1,5 +1,11 @@
 ngày 31-5
-    cần 1 giao diện console về việc lấy được tên lá bài
+    cần 1 giao diện console về việc lấy được tên lá bài.
 
 ngày 03-06
-    fix lỗi rút trùng lá bài trong lượt rút 3 lá
+    fix lỗi rút trùng lá bài trong lượt rút 3 lá.
+
+ngày 04-06
+    cập nhật tính năng trả lời yes / no khi chọn options question.
+
+ngày 05-06
+    nén thành file .exe
