@@ -1,27 +1,18 @@
-from src.object_class.tarots import Tarots
+from src.utils.functions import draw_tarot_cards, yes_no_question
 
 def main():
 
     while True:
         try:
-            nb_of_card = int(input("Số lá muốn rút: "))
-            if nb_of_card > 0:
-                break
-            else:
-                print("Số lá phải lớn hơn 0. Vui lòng nhập lại.")
-        except ValueError:
-            print("Đầu vào không hợp lệ. Vui lòng nhập lại.")
-
-    a = input("Câu hỏi: ")
-    card_list = []
-    tarot = Tarots(nb_of_card= nb_of_card)
-
-    for nb in range(nb_of_card):
-        card = tarot.get_info_card()
-        if (card in card_list) == False: 
-            card_list.append( tarot.get_info_card() )
-
-    for card in card_list:
-        print(f"Card: {card[0]} - {card[1]}")
+            choose = int(input("Chọn thể loại 1-Yes/No  2-Rút lá: "))
+            if choose > 0: 
+                question = input("Câu hỏi: ")
+                if choose == 1: return yes_no_question()
+                elif choose == 2: return draw_tarot_cards()
+            else: return "Số lá phải lớn hơn 0. Vui lòng nhập lại."
+        except ValueError: return "Đầu vào không hợp lệ. Vui lòng nhập lại."
+    
+    
+    
 
     
