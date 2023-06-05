@@ -25,7 +25,7 @@ class Tarots:
         random_status = random.randint(0, 1)
         card_name = self.card_dict[str(random_number)] # Lấy tên của lá bài từ dictionary
         card_status = 'xuôi' if random_status == 0 else 'ngược'
-        return card_name, card_status
+        return str(card_name + ' - ' + card_status)
 
 
     
