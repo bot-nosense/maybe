@@ -9,3 +9,8 @@ ngày 04-06
 
 ngày 05-06
     nén thành file .exe
+    thêm tính năng cùng 1 lượt rút nhiều câu hỏi, các lá bài không bị trùng nhau từ câu hỏi thứ 2
+
+ngày 07-06
+    fix câu hỏi yes/no case MEANING only return goodluck!
+    
