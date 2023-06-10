@@ -20,6 +20,11 @@ MEANING_TYPE = {
     'Swords': 'No.',
 }
 
+SERVER_NAME = 'DESKTOP-OTE2BAT'
+DATABASE_NAME = 'TAROT_DOT_VN'
+DRIVER_NAME = '{SQL Server}'
+CONNECT_SSMS_STRING = 'Driver=' + DRIVER_NAME + ';Server=' + SERVER_NAME + ';Database= '+ DATABASE_NAME +';Trusted_Connection=yes;'
+
 
 # gồm ý nghĩa tích cực và tiêu cực
 MEANING_OF_THE_CARD = {
