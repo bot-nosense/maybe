@@ -9,8 +9,16 @@ ngày 04-06
 
 ngày 05-06
     nén thành file .exe
-    thêm tính năng cùng 1 lượt rút nhiều câu hỏi, các lá bài không bị trùng nhau từ câu hỏi thứ 2
+    thêm tính năng cùng 1 lượt rút nhiều câu hỏi
 
 ngày 07-06
     fix câu hỏi yes/no case MEANING only return goodluck!
+    fix các lá bài không bị trùng nhau từ câu hỏi thứ 2
+
+ngày 08-06
+    fix 1 lần bốc bài thì chỉ được 5 lần rút 3 lá (chưa fix được)
+
+ngày 09-06
+    connect project với postgresql
+    viết hàm lưu lại câu hỏi và câu trả lời.
     
