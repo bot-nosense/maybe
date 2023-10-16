@@ -12,7 +12,7 @@ def main():
                 if choose == 1: yes_no_question(question)
                 elif choose == 2: draw_tarot_cards()
             else: return "Số lá phải lớn hơn 0. Vui lòng nhập lại."
-        except ValueError: return "Đầu vào không hợp lệ. Vui lòng nhập lại."
+        except ValueError: return "Đầu vào không hợp lệ. Vui lòng nhập lại." ưefewfewfew
 
 
 
