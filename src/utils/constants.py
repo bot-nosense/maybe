@@ -1,24 +1,26 @@
 
-NATURE_TYPE = {
-    'xuôi': 'Yes.',
-    'ngược': 'No.',
+YES_NO_QUES = {
+    'NATURE_TYPE': {
+        'xuôi': 'Có.',
+        'ngược': 'Không.',
+    },
+    'ONLY_MINOR_ARCANA_TYPE': {
+        'Wands': 'Có.',
+        'Cups': 'Không.',
+        'Chalices': 'Không.',
+        'Pentacles': 'Không.',
+        'Swords': 'Có.',
+    },
+    'MEANING_TYPE': {
+        'Wands': 'Có, nhưng bạn phải nỗ lực để có được điều đó.',
+        'Cups': 'Có, chắc chắn bạn sẽ có được điều bạn muốn mà không càn phải làm gì cả.',
+        'Chalices': 'Có, chắc chắn bạn sẽ có được điều bạn muốn mà không cần phải làm gì cả.',
+        'Pentacles': 'Có, bạn sẽ phải có một sự đánh đổi, trả giá để có được nó.',
+        'Swords': 'Không.',
+    }
 }
 
-ONLY_MINOR_ARCANA_TYPE = {
-    'Wands': 'Yes.',
-    'Cups': 'No.',
-    'Chalices': 'No.',
-    'Pentacles': 'No.',
-    'Swords': 'Yes.',
-}
 
-MEANING_TYPE = {
-    'Wands': 'Yes, nhưng bạn phải nỗ lực để có được điều đó.',
-    'Cups': 'Yes, chắc chắn bạn sẽ có được điều bạn muốn mà không càn phải làm gì cả.',
-    'Chalices': 'Yes, chắc chắn bạn sẽ có được điều bạn muốn mà không càn phải làm gì cả.',
-    'Pentacles': 'Yes, bạn sẽ phải có một sự đánh đổi, trả giá để có được nó.',
-    'Swords': 'No.',
-}
 
 SERVER_NAME = 'DESKTOP-OTE2BAT'
 DATABASE_NAME = 'TAROT_DOT_VN'
@@ -47,8 +49,8 @@ MEANING_OF_THE_CARD = {
 
         'sự ngây thơ, bất cần',
         'không có kế hoạch, chiến lược rõ ràng',
-        'năng lượng khá trẻ, sự trẻ trung này maybe, nó có cả tiêu cực lẫn tích cực',
-        'thiếu cẩn trọng, cẩn thận',
+        'năng lượng khá trẻ, sự trẻ trung tồn tại có cả tiêu cực lẫn tích cực',
+        'thiếu cẩn trọng, thiếu cẩn thận',
         'thích thử cái mới mà không quan tâm tới kết quả, bất cần',
         'bốc đồng',
         'không nghĩ được xa, không lường trước được kết quả',
