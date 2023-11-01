@@ -17,6 +17,7 @@ YES_NO_QUES = {
         'Chalices': 'Có, chắc chắn bạn sẽ có được điều bạn muốn mà không cần phải làm gì cả.',
         'Pentacles': 'Có, bạn sẽ phải có một sự đánh đổi, trả giá để có được nó.',
         'Swords': 'Không.',
+        'minor_arcana': 'Không chắc chắn.'
     }
 }
 

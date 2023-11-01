@@ -3,6 +3,7 @@ from src.utils.constants import YES_NO_QUES
 from src.object_class.tarots import Tarots 
 
 
+
 class Process:
 
     def __init__(self, question):
@@ -14,24 +15,28 @@ class Process:
 
     def yes_no_question(self, question):
         random_case = random.choice(list(YES_NO_QUES.keys()))
-        card = self.tar.get_info_card()
-        print('Lá bài: ', card)
-
-        def result(card_name):
-            card_name = [part.strip() for part in card_name.split('-')]
-            minor_arcana_name = card_name[0].split(' ')
-            len_minor_arcana = len(minor_arcana_name)
+        card = self.tar.print_result()
+        print('-----')
+        print('Card:',card)
+        print('Case:',random_case)
+        
+        def result(card):
+            card = [part.strip() for part in card.split('-')]
+            minor_arcana = card[0].split(' ')
+            len_minor_arcana = len(minor_arcana)
             if len_minor_arcana == 3:
-                if card_name[0] == 'The Hanged Man': return YES_NO_QUES['NATURE_TYPE'][card_name[1]]
+                if card[0] == 'The Hanged Man': return YES_NO_QUES['NATURE_TYPE'][card[1]]
                 else:
                     match random_case:
-                        case 'NATURE_TYPE': return YES_NO_QUES['NATURE_TYPE'][card_name[1]] 
-                        case 'ONLY_MINOR_ARCANA_TYPE': return YES_NO_QUES['ONLY_MINOR_ARCANA_TYPE'][minor_arcana_name[2]] 
-                        case 'MEANING_TYPE': return YES_NO_QUES['MEANING_TYPE'][minor_arcana_name[2]]
-            else: return YES_NO_QUES['NATURE_TYPE'][card_name[1]]  
+                        case 'NATURE_TYPE': return YES_NO_QUES['NATURE_TYPE'][card[1]] 
+                        case 'ONLY_MINOR_ARCANA_TYPE': return YES_NO_QUES['ONLY_MINOR_ARCANA_TYPE'][minor_arcana[2]] 
+                        case 'MEANING_TYPE': 
+                            if minor_arcana[2] in {'Swords', 'Pentacles', 'Chalices', 'Cups', 'Wands'}: return YES_NO_QUES['MEANING_TYPE'][minor_arcana[2]]
+                            else: return YES_NO_QUES['MEANING_TYPE']['minor_arcana']
+            else: return YES_NO_QUES['NATURE_TYPE'][card[1]]  
 
-        def print_result(card_name):
-            print(result(card_name))
+        def print_result(card):
+            print(result(card))
 
         return print_result(card)
 
