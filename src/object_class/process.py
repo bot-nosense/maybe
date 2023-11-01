@@ -18,7 +18,6 @@ class Process:
         card = self.tar.print_result()
         print('-----')
         print('Card:',card)
-        print('Case:',random_case)
         
         def result(card):
             card = [part.strip() for part in card.split('-')]
