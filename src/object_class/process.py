@@ -17,7 +17,7 @@ class Process:
         random_case = random.choice(list(YES_NO_QUES.keys()))
         card = self.tar.print_result()
         print('-----')
-        print('Card:',card)
+        print('Card:        ',card)
         
         def result(card):
             card = [part.strip() for part in card.split('-')]
@@ -35,7 +35,7 @@ class Process:
             else: return YES_NO_QUES['NATURE_TYPE'][card[1]]  
 
         def print_result(card):
-            print(result(card))
+            print('Result:      ', result(card))
 
         return print_result(card)
 

@@ -10,10 +10,11 @@ def main():
             # choose = int(input("Chọn: 1-Yes/No  2-Rút lá: "))
             # if choose > 0: 
             # if choose ==  1: 
-            question = input("Câu hỏi: ")
+            question = input("Question:     ")
             pr = Process(question)
-            if choose == 1: pr.yes_no_question(question)
-            elif choose == 2: pr.draw_tarot_cards()
+            pr.yes_no_question(question)
+            # if choose == 1: pr.yes_no_question(question)
+            # elif choose == 2: pr.draw_tarot_cards()
             # else: return "Lớn hơn 0, nhập lại đê."
         except ValueError: return "Nhập lại đê." 
 
