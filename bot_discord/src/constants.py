@@ -13,7 +13,7 @@ RANDOM_QOUTE = [
 ]
 
 
-DATABASE_JSON = {
+VISION_TAROT_JSON = {
   "1": [
     "1.jpg",
     "The Fool - xuôi"
