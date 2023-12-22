@@ -27,6 +27,6 @@ async def on_message(message):
     event = Event(message, client)
     await event.bot_replies()
     
-logging.basicConfig(filename='bot.log', level=logging.DEBUG)  # Đổi INFO thành DEBUG để log cả các thông điệp debug.
+logging.basicConfig(filename='bot_discord/environment/dev/bot.log', level=logging.DEBUG)  # Đổi INFO thành DEBUG để log cả các thông điệp debug.
 client.run(os.getenv('TOKEN_DISCORD_BOT'), reconnect = True) 
 
