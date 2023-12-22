@@ -23,3 +23,5 @@ INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: 61ef3fa
 INFO:root:server: gác xép nh\u1ecf c\u1ee7a hoàng t\u1eed, user: bot.nosense
 INFO:root:server: gác xép nh\u1ecf c\u1ee7a hoàng t\u1eed, user: maybe#0142
 INFO:root:We have logged in as maybe#0142
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:discord.client:logging in using static token

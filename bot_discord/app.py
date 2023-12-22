@@ -4,7 +4,6 @@ import logging
 
 from src.event import Event
 from dotenv import load_dotenv
-from PIL import Image
 
 
 

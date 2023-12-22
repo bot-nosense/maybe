@@ -26,7 +26,7 @@ class Event:
         keys = [rd.randint(1, 158) for _ in range(count)]
         selected_values = [DATABASE_JSON[str(key)] for key in keys if str(key) in DATABASE_JSON]
         self.names = [i[1] for i in selected_values]
-        self.url_img = [( str(os.getenv('DATABASE_THE_LIGHT_VISION_TAROT')) + str(i[0]) ) for i in selected_values]
+        self.url_img = [( str(os.getenv('DATABASE_VISION_TAROT')) + str(i[0]) ) for i in selected_values]
 
     def card_name(self):
         names = [name for name in self.names]
