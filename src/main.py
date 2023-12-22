@@ -1,22 +1,26 @@
 from src.object_class.process import Process 
+from flask import Flask
+from src.web.routes import app
+
 
 
 def main():
-    print('beta verison 0.0.0.3, 20231031 update yes/no questions')
+    print('beta verison 0.0.0.4: Develop card drawing feature on local website')
 
-    while True:
-        try:
-            print()
-            # choose = int(input("Chọn: 1-Yes/No  2-Rút lá: "))
-            # if choose > 0: 
-            # if choose ==  1: 
-            question = input("Question:     ")
-            pr = Process(question)
-            pr.yes_no_question(question)
-            # if choose == 1: pr.yes_no_question(question)
-            # elif choose == 2: pr.draw_tarot_cards()
-            # else: return "Lớn hơn 0, nhập lại đê."
-        except ValueError: return "Nhập lại đê." 
+    # while True:
+    try:
+        print()
+        print("Mục lục:\n    1. Câu hỏi yes/no\n    2. Rút lá")
+        choose = int(input("Nhập lựa chọn: "))
+        match choose:
+            case 1:
+                question = input("Question:     ")
+                pr = Process(question)
+                pr.yes_no_question(question)
+            case 2: pass
+            case _:
+                print('----')
+    except ValueError: return "Nhập lại đê." 
 
 
 
