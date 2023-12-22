@@ -2,7 +2,9 @@ import random as rd
 import os
 import discord
 
-from src.constants import RANDOM_QOUTE, VISION_TAROT_JSON
+from src.constants.vison_tarot import VISION_TAROT_JSON
+from src.constants.qoute import RANDOM_QOUTE
+from src.constants.commands import *
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -21,6 +23,18 @@ class Event:
 
     def get_path_img(self):
         return self.url_img
+
+    def checkvalidate_commands(self):
+        for i in MAIN_COMMANDS:
+            if i in self.message.content:
+                return i
+
+    def concat_commands(self):
+        # split commands, self.message
+        
+        pass
+    
+
 
     def get_card_list(self, count):
         keys = [rd.randint(1, 158) for _ in range(count)]
@@ -45,12 +59,14 @@ class Event:
         if self.message.author == self.client.user:
             return 
 
-        if self.message.content.startswith('1 lá'):  
+        content = self.checkvalidate_commands()
+
+        if self.message.content.startswith(MAIN_COMMANDS[0]) or content == MAIN_COMMANDS[0]:  
             self.get_card_list(1)
             await self.message.channel.send(self.card_name())
             await self.message.channel.send(file=discord.File(self.card_image()))
 
-        elif self.message.content.startswith('3 lá'):  
+        elif self.message.content.startswith(MAIN_COMMANDS[1]) or content == MAIN_COMMANDS[1]:  
             self.get_card_list(3)
             await self.message.channel.send(self.card_name())
             files = []
@@ -58,7 +74,7 @@ class Event:
                 files.append(discord.File(self.url_img[i]))
             await self.message.channel.send(files=files)
 
-        elif self.message.content.startswith('6 lá'):  
+        elif self.message.content.startswith(MAIN_COMMANDS[2]) or content == MAIN_COMMANDS[2]: 
             self.get_card_list(6)
             await self.message.channel.send(self.card_name())
             files = []
@@ -66,7 +82,7 @@ class Event:
                 files.append(discord.File(self.url_img[i]))
             await self.message.channel.send(files=files)
 
-        elif self.message.content.startswith('9 lá'):  
+        elif self.message.content.startswith(MAIN_COMMANDS[3]) or content == MAIN_COMMANDS[3]:  
             self.get_card_list(9)
             await self.message.channel.send(self.card_name())
             files = []
@@ -75,6 +91,6 @@ class Event:
             await self.message.channel.send(files=files)
 
         else:
-            response = self.random_replies()
-            await self.message.channel.send(response)
-            # return
+            # response = self.random_replies()
+            # await self.message.channel.send(response)
+            return

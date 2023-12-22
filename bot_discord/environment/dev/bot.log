@@ -25,3 +25,388 @@ INFO:root:server: gác xép nh\u1ecf c\u1ee7a hoàng t\u1eed, user: maybe#0142
 INFO:root:We have logged in as maybe#0142
 DEBUG:asyncio:Using proactor: IocpProactor
 INFO:discord.client:logging in using static token
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: caa827c77d68f895a71d0bf2548d3f19).
+INFO:root:We have logged in as maybe#0142
+INFO:root:server: gác xép nh\u1ecf c\u1ee7a hoàng t\u1eed, user: bot.nosense
+INFO:root:server: gác xép nh\u1ecf c\u1ee7a hoàng t\u1eed, user: maybe#0142
+INFO:root:server: gác xép nh\u1ecf c\u1ee7a hoàng t\u1eed, user: bot.nosense
+INFO:root:server: gác xép nh\u1ecf c\u1ee7a hoàng t\u1eed, user: maybe#0142
+INFO:root:server: None, user: bot.nosense
+INFO:root:server: None, user: maybe#0142
+INFO:root:server: None, user: bot.nosense
+INFO:root:server: None, user: maybe#0142
+INFO:root:server: None, user: maybe#0142
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: e7c8c05086b18c1bef651cac1efff98d).
+INFO:root:We have logged in as maybe#0142
+INFO:root:server: None, user: bot.nosense
+INFO:root:server: None, user: maybe#0142
+INFO:root:server: None, user: maybe#0142
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: e7e39b8a92eec26f3ddb78fd4260e8c9).
+INFO:root:We have logged in as maybe#0142
+INFO:root:server: None, user: bot.nosense
+INFO:root:server: None, user: maybe#0142
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: 4526d8f00ba082157d7e291b762c4441).
+INFO:root:We have logged in as maybe#0142
+INFO:root:server: None, user: bot.nosense
+INFO:root:server: None, user: maybe#0142
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: 889f6aacf6d875166dcc8ac356ddbdd8).
+INFO:root:We have logged in as maybe#0142
+INFO:root:server: None, user: bot.nosense
+INFO:root:server: None, user: maybe#0142
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: 638c02a8dade3c3e13bb85187ec4deb6).
+INFO:root:server: None, user: bot.nosense
+INFO:root:We have logged in as maybe#0142
+INFO:root:server: None, user: maybe#0142
+INFO:root:server: None, user: maybe#0142
+INFO:root:server: None, user: bot.nosense
+INFO:root:server: None, user: maybe#0142
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: ab458785cc2037b6cc6a4da77ce914b5).
+INFO:root:We have logged in as maybe#0142
+INFO:root:server: None, user: bot.nosense
+INFO:root:server: None, user: maybe#0142
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: 985af75deee5e94ebe3bad0888498ce7).
+INFO:root:server: None, user: bot.nosense
+INFO:root:We have logged in as maybe#0142
+INFO:root:server: None, user: maybe#0142
+INFO:root:server: None, user: maybe#0142
+INFO:root:server: None, user: bot.nosense
+INFO:root:server: None, user: maybe#0142
+INFO:root:server: None, user: maybe#0142
+INFO:root:server: None, user: bot.nosense
+INFO:root:server: None, user: maybe#0142
+INFO:root:server: None, user: maybe#0142
+INFO:root:server: None, user: bot.nosense
+INFO:root:server: None, user: maybe#0142
+INFO:root:server: gác xép nh\u1ecf c\u1ee7a hoàng t\u1eed, user: bot.nosense
+INFO:root:server: gác xép nh\u1ecf c\u1ee7a hoàng t\u1eed, user: maybe#0142
+INFO:root:server: gác xép nh\u1ecf c\u1ee7a hoàng t\u1eed, user: bot.nosense
+INFO:root:server: gác xép nh\u1ecf c\u1ee7a hoàng t\u1eed, user: maybe#0142
+INFO:root:server: None, user: bot.nosense
+INFO:root:server: None, user: maybe#0142
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: 03ec6ab781d73458108f6f258cc9d3cf).
+INFO:root:We have logged in as maybe#0142
+INFO:root:server: None, user: bot.nosense
+INFO:root:server: None, user: maybe#0142
+INFO:root:server: None, user: maybe#0142
+INFO:discord.gateway:Shard ID None session has been invalidated.
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: f80086b106145ea484ec6f5f2fafee07).
+INFO:root:We have logged in as maybe#0142
+WARNING:discord.gateway:Shard ID None has stopped responding to the gateway. Closing and restarting.
+INFO:discord.gateway:Shard ID None session has been invalidated.
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: def43b62d37f7605e8e86112a3954697).
+INFO:root:We have logged in as maybe#0142
+INFO:root:server: gác xép nh\u1ecf c\u1ee7a hoàng t\u1eed, user: golden9156
+INFO:root:server: gác xép nh\u1ecf c\u1ee7a hoàng t\u1eed, user: maybe#0142
+INFO:root:server: gác xép nh\u1ecf c\u1ee7a hoàng t\u1eed, user: bot.nosense
+INFO:root:server: gác xép nh\u1ecf c\u1ee7a hoàng t\u1eed, user: maybe#0142
+INFO:root:server: None, user: golden9156
+INFO:root:server: None, user: maybe#0142
+INFO:root:server: None, user: maybe#0142
+INFO:root:server: None, user: golden9156
+INFO:root:server: None, user: maybe#0142
+INFO:root:server: None, user: golden9156
+INFO:root:server: None, user: maybe#0142
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: be4e489be92977eb291f23fb89e4fdfa).
+INFO:root:We have logged in as maybe#0142
+ERROR:discord.client:Ignoring exception in on_message
+Traceback (most recent call last):
+  File "C:\BOT Nosense\_projects\carot.vn\bot_discord\environment\dev\venv\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\BOT Nosense\_projects\carot.vn\bot_discord\app.py", line 26, in on_message
+    print(f'message: {client.get_context(message)}')
+                      ^^^^^^^^^^^^^^^^^^
+AttributeError: 'Client' object has no attribute 'get_context'
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: ec1c3778d6dcb8d5d502ba252a1ae16e).
+INFO:root:We have logged in as maybe#0142
+ERROR:discord.client:Ignoring exception in on_message
+Traceback (most recent call last):
+  File "C:\BOT Nosense\_projects\carot.vn\bot_discord\environment\dev\venv\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\BOT Nosense\_projects\carot.vn\bot_discord\app.py", line 27, in on_message
+    ctx = await client.get_context(message)
+                ^^^^^^^^^^^^^^^^^^
+AttributeError: 'Client' object has no attribute 'get_context'
+DEBUG:asyncio:Using proactor: IocpProactor
+WARNING:discord.ext.commands.bot:Privileged message content intent is missing, commands may not work as expected.
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: fe13bceef1a098bb5ec9937e3f484850).
+INFO:root:We have logged in as maybe#0142
+INFO:root:server: None, user: bot.nosense
+INFO:root:server: None, user: maybe#0142
+INFO:root:server: None, user: maybe#0142
+INFO:root:server: gác xép nh\u1ecf c\u1ee7a hoàng t\u1eed, user: bot.nosense
+INFO:root:server: gác xép nh\u1ecf c\u1ee7a hoàng t\u1eed, user: maybe#0142
+DEBUG:asyncio:Using proactor: IocpProactor
+WARNING:discord.ext.commands.bot:Privileged message content intent is missing, commands may not work as expected.
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: 303fff7a957fab2af821befcf6611b7b).
+ERROR:discord.client:Ignoring exception in on_message
+Traceback (most recent call last):
+  File "C:\BOT Nosense\_projects\carot.vn\bot_discord\environment\dev\venv\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\BOT Nosense\_projects\carot.vn\bot_discord\app.py", line 29, in on_message
+    ctx = await client.get_context(message.content)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\BOT Nosense\_projects\carot.vn\bot_discord\environment\dev\venv\Lib\site-packages\discord\ext\commands\bot.py", line 1283, in get_context
+    view = StringView(origin.content)
+                      ^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'content'
+INFO:root:We have logged in as maybe#0142
+DEBUG:asyncio:Using proactor: IocpProactor
+WARNING:discord.ext.commands.bot:Privileged message content intent is missing, commands may not work as expected.
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: 19c0e605d5603803d834ce29afde0c4b).
+INFO:root:We have logged in as maybe#0142
+ERROR:discord.client:Ignoring exception in on_message
+Traceback (most recent call last):
+  File "C:\BOT Nosense\_projects\carot.vn\bot_discord\environment\dev\venv\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\BOT Nosense\_projects\carot.vn\bot_discord\app.py", line 30, in on_message
+    print(f'message: {ctx.content}')
+                      ^^^^^^^^^^^
+AttributeError: 'Context' object has no attribute 'content'
+DEBUG:asyncio:Using proactor: IocpProactor
+WARNING:discord.ext.commands.bot:Privileged message content intent is missing, commands may not work as expected.
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: 54990b14b6ba68efc41aa046ba87ee71).
+INFO:root:We have logged in as maybe#0142
+INFO:root:server: gác xép nh\u1ecf c\u1ee7a hoàng t\u1eed, user: bot.nosense
+INFO:root:server: gác xép nh\u1ecf c\u1ee7a hoàng t\u1eed, user: maybe#0142
+DEBUG:asyncio:Using proactor: IocpProactor
+WARNING:discord.ext.commands.bot:Privileged message content intent is missing, commands may not work as expected.
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: 623bc9fbf382a14adcd5bbe4f120eee9).
+INFO:root:We have logged in as maybe#0142
+DEBUG:asyncio:Using proactor: IocpProactor
+WARNING:discord.ext.commands.bot:Privileged message content intent is missing, commands may not work as expected.
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: 2a0337cc0e324335b37c693c45651a91).
+INFO:root:We have logged in as maybe#0142
+DEBUG:asyncio:Using proactor: IocpProactor
+WARNING:discord.ext.commands.bot:Privileged message content intent is missing, commands may not work as expected.
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: 775cf8515187e60684516b8e94c9784b).
+ERROR:discord.client:Ignoring exception in on_message
+Traceback (most recent call last):
+  File "C:\BOT Nosense\_projects\carot.vn\bot_discord\environment\dev\venv\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\BOT Nosense\_projects\carot.vn\bot_discord\app.py", line 31, in on_message
+    await self.message.channel.send(messageContent)
+          ^^^^
+NameError: name 'self' is not defined
+INFO:root:We have logged in as maybe#0142
+DEBUG:asyncio:Using proactor: IocpProactor
+WARNING:discord.ext.commands.bot:Privileged message content intent is missing, commands may not work as expected.
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: 86e770ee6764153a5a31e2ce8ab1fdc1).
+INFO:root:We have logged in as maybe#0142
+DEBUG:asyncio:Using proactor: IocpProactor
+WARNING:discord.ext.commands.bot:Privileged message content intent is missing, commands may not work as expected.
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: 275762317e7cc4d182b39596d34a6e90).
+INFO:root:We have logged in as maybe#0142
+ERROR:discord.client:Ignoring exception in on_message
+Traceback (most recent call last):
+  File "C:\BOT Nosense\_projects\carot.vn\bot_discord\environment\dev\venv\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\BOT Nosense\_projects\carot.vn\bot_discord\app.py", line 35, in on_message
+    await event.bot_replies()
+  File "C:\BOT Nosense\_projects\carot.vn\bot_discord\src\event.py", line 59, in bot_replies
+    if self.message.author == self.client.user:
+       ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'author'
+ERROR:discord.client:Ignoring exception in on_message
+Traceback (most recent call last):
+  File "C:\BOT Nosense\_projects\carot.vn\bot_discord\environment\dev\venv\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\BOT Nosense\_projects\carot.vn\bot_discord\app.py", line 35, in on_message
+    await event.bot_replies()
+  File "C:\BOT Nosense\_projects\carot.vn\bot_discord\src\event.py", line 59, in bot_replies
+    if self.message.author == self.client.user:
+       ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'author'
+DEBUG:asyncio:Using proactor: IocpProactor
+WARNING:discord.ext.commands.bot:Privileged message content intent is missing, commands may not work as expected.
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: 157172e67f21ed2fe8a3994f3c75eb05).
+INFO:root:We have logged in as maybe#0142
+DEBUG:asyncio:Using proactor: IocpProactor
+WARNING:discord.ext.commands.bot:Privileged message content intent is missing, commands may not work as expected.
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: 39f285c15c76d97b396a669fcbeffee0).
+ERROR:discord.client:Ignoring exception in on_message
+Traceback (most recent call last):
+  File "C:\BOT Nosense\_projects\carot.vn\bot_discord\environment\dev\venv\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\BOT Nosense\_projects\carot.vn\bot_discord\app.py", line 35, in on_message
+    await event.bot_replies()
+  File "C:\BOT Nosense\_projects\carot.vn\bot_discord\src\event.py", line 63, in bot_replies
+    content = await self.checkvalidate_commands()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\BOT Nosense\_projects\carot.vn\bot_discord\src\event.py", line 28, in checkvalidate_commands
+    a = await self.message.channel.fetch_message(message.id) # gets the message with id
+                                                 ^^^^^^^
+NameError: name 'message' is not defined
+INFO:root:We have logged in as maybe#0142
+DEBUG:asyncio:Using proactor: IocpProactor
+WARNING:discord.ext.commands.bot:Privileged message content intent is missing, commands may not work as expected.
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: 800af22a24478f68c6a09da246d70fbe).
+INFO:root:We have logged in as maybe#0142
+ERROR:discord.client:Ignoring exception in on_message
+Traceback (most recent call last):
+  File "C:\BOT Nosense\_projects\carot.vn\bot_discord\environment\dev\venv\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\BOT Nosense\_projects\carot.vn\bot_discord\app.py", line 35, in on_message
+    await event.bot_replies()
+  File "C:\BOT Nosense\_projects\carot.vn\bot_discord\src\event.py", line 63, in bot_replies
+    content = await self.checkvalidate_commands()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\BOT Nosense\_projects\carot.vn\bot_discord\src\event.py", line 30, in checkvalidate_commands
+    if i in a:
+       ^^^^^^
+TypeError: argument of type 'Message' is not iterable
+DEBUG:asyncio:Using proactor: IocpProactor
+WARNING:discord.ext.commands.bot:Privileged message content intent is missing, commands may not work as expected.
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: ff9deecd7d51e3f83aa480c287ce7c2f).
+INFO:root:We have logged in as maybe#0142
+DEBUG:asyncio:Using proactor: IocpProactor
+WARNING:discord.ext.commands.bot:Privileged message content intent is missing, commands may not work as expected.
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: 105daac0730b58e76c490675a082a62b).
+INFO:root:We have logged in as maybe#0142
+ERROR:discord.client:Ignoring exception in on_message
+Traceback (most recent call last):
+  File "C:\BOT Nosense\_projects\carot.vn\bot_discord\environment\dev\venv\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\BOT Nosense\_projects\carot.vn\bot_discord\app.py", line 35, in on_message
+    await event.bot_replies()
+  File "C:\BOT Nosense\_projects\carot.vn\bot_discord\src\event.py", line 63, in bot_replies
+    content = await self.checkvalidate_commands()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\BOT Nosense\_projects\carot.vn\bot_discord\src\event.py", line 30, in checkvalidate_commands
+    if i in a:
+       ^^^^^^
+TypeError: argument of type 'Message' is not iterable
+DEBUG:asyncio:Using proactor: IocpProactor
+WARNING:discord.ext.commands.bot:Privileged message content intent is missing, commands may not work as expected.
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: b9d2962e2543dea7e4c11cd83eee60ce).
+INFO:root:We have logged in as maybe#0142
+DEBUG:asyncio:Using proactor: IocpProactor
+WARNING:discord.ext.commands.bot:Privileged message content intent is missing, commands may not work as expected.
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: 90e00f7e3b5ef2957df4c27ef62916de).
+ERROR:discord.client:Ignoring exception in on_message
+Traceback (most recent call last):
+  File "C:\BOT Nosense\_projects\carot.vn\bot_discord\environment\dev\venv\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\BOT Nosense\_projects\carot.vn\bot_discord\app.py", line 29, in on_message
+    a = await self.message.channel.fetch_message(message.id) # gets the message with id
+              ^^^^
+NameError: name 'self' is not defined
+INFO:root:We have logged in as maybe#0142
+DEBUG:asyncio:Using proactor: IocpProactor
+WARNING:discord.ext.commands.bot:Privileged message content intent is missing, commands may not work as expected.
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: 6d1d6e4c208e39d1a72c3d22b666ff77).
+ERROR:discord.client:Ignoring exception in on_message
+Traceback (most recent call last):
+  File "C:\BOT Nosense\_projects\carot.vn\bot_discord\environment\dev\venv\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\BOT Nosense\_projects\carot.vn\bot_discord\app.py", line 30, in on_message
+    print(f'message: {at}')
+                      ^^
+NameError: name 'at' is not defined
+INFO:root:We have logged in as maybe#0142
+DEBUG:asyncio:Using proactor: IocpProactor
+WARNING:discord.ext.commands.bot:Privileged message content intent is missing, commands may not work as expected.
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: fda5fccaa7ae913e5d15d0ec99398bea).
+INFO:root:We have logged in as maybe#0142
+DEBUG:asyncio:Using proactor: IocpProactor
+WARNING:discord.ext.commands.bot:Privileged message content intent is missing, commands may not work as expected.
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: 7959a61ace0c944c4ba4597e8f24e4be).
+INFO:root:We have logged in as maybe#0142
+DEBUG:asyncio:Using proactor: IocpProactor
+WARNING:discord.ext.commands.bot:Privileged message content intent is missing, commands may not work as expected.
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: 864bec234665cb7047a62e24c19f5bd0).
+ERROR:discord.client:Ignoring exception in on_message
+Traceback (most recent call last):
+  File "C:\BOT Nosense\_projects\carot.vn\bot_discord\environment\dev\venv\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\BOT Nosense\_projects\carot.vn\bot_discord\app.py", line 31, in on_message
+    await self.message.channel.send(a)
+          ^^^^
+NameError: name 'self' is not defined
+INFO:root:We have logged in as maybe#0142
+DEBUG:asyncio:Using proactor: IocpProactor
+WARNING:discord.ext.commands.bot:Privileged message content intent is missing, commands may not work as expected.
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: 9285c95e2e2dc3e1af6aa081efc6e54c).
+INFO:root:We have logged in as maybe#0142
+DEBUG:asyncio:Using proactor: IocpProactor
+WARNING:discord.ext.commands.bot:Privileged message content intent is missing, commands may not work as expected.
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: 2f5bffec58b77bb153b0577c33ce200a).
+INFO:root:We have logged in as maybe#0142
+DEBUG:asyncio:Using proactor: IocpProactor
+WARNING:discord.ext.commands.bot:Privileged message content intent is missing, commands may not work as expected.
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: e9661a1b900b653378d96fd024d66391).
+INFO:root:We have logged in as maybe#0142
+DEBUG:asyncio:Using proactor: IocpProactor
+WARNING:discord.ext.commands.bot:Privileged message content intent is missing, commands may not work as expected.
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: 8adc896aa4aa6e55d69fe561164a0af9).
+INFO:root:We have logged in as maybe#0142
+DEBUG:asyncio:Using proactor: IocpProactor
+WARNING:discord.ext.commands.bot:Privileged message content intent is missing, commands may not work as expected.
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: 60cba15c3508b6d4466968ee0c0889fb).
+INFO:root:We have logged in as maybe#0142
+DEBUG:asyncio:Using proactor: IocpProactor
+WARNING:discord.ext.commands.bot:Privileged message content intent is missing, commands may not work as expected.
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: b9dbd096683e86e608529937edf40256).
+INFO:root:We have logged in as maybe#0142
+DEBUG:asyncio:Using proactor: IocpProactor
+WARNING:discord.ext.commands.bot:Privileged message content intent is missing, commands may not work as expected.
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: af025f71f4819e268d9cb29017030d4e).
+INFO:root:We have logged in as maybe#0142
+DEBUG:asyncio:Using proactor: IocpProactor
+WARNING:discord.ext.commands.bot:Privileged message content intent is missing, commands may not work as expected.
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: 5cfd8506e19c70d438f58b5b451e915a).
+INFO:root:We have logged in as maybe#0142
+DEBUG:asyncio:Using proactor: IocpProactor
+WARNING:discord.ext.commands.bot:Privileged message content intent is missing, commands may not work as expected.
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: dd9e537614079c96a5b1040bf6a79b7b).
+INFO:root:We have logged in as maybe#0142
