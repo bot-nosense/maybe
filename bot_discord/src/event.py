@@ -27,7 +27,6 @@ class Event:
     def check_validate_commands(self):
         return next((i for i in MAIN_COMMANDS if i in self.message.content), None)
 
-
     def concat_commands(self):
         # split commands, self.message
         
