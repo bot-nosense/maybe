@@ -24,10 +24,9 @@ class Event:
     def get_path_img(self):
         return self.url_img
 
-    def checkvalidate_commands(self):
-        for i in MAIN_COMMANDS:
-            if i in self.message.content:
-                return i
+    def check_validate_commands(self):
+        return next((i for i in MAIN_COMMANDS if i in self.message.content), None)
+
 
     def concat_commands(self):
         # split commands, self.message
@@ -35,6 +34,8 @@ class Event:
         pass
     
 
+    def tag_user(self):
+        return self.message.author.mention
 
     def get_card_list(self, count):
         keys = [rd.randint(1, 158) for _ in range(count)]
@@ -59,38 +60,37 @@ class Event:
         if self.message.author == self.client.user:
             return 
 
-        content = self.checkvalidate_commands()
+        content = self.check_validate_commands()
 
-        if self.message.content.startswith(MAIN_COMMANDS[0]) or content == MAIN_COMMANDS[0]:  
-            self.get_card_list(1)
-            await self.message.channel.send(self.card_name())
-            await self.message.channel.send(file=discord.File(self.card_image()))
+        if self.message.content.startswith(MAIN_COMMANDS[0]) or content == MAIN_COMMANDS[0] or content == MAIN_COMMANDS[4]:  
+            nb = 1
+            self.get_card_list(nb)
+            message_content = self.card_name()
+            files = [discord.File(self.url_img[i]) for i in range(nb)]
+            await self.message.reply(content=message_content, files=files)
 
-        elif self.message.content.startswith(MAIN_COMMANDS[1]) or content == MAIN_COMMANDS[1]:  
-            self.get_card_list(3)
-            await self.message.channel.send(self.card_name())
-            files = []
-            for i in range(3):
-                files.append(discord.File(self.url_img[i]))
-            await self.message.channel.send(files=files)
+        elif self.message.content.startswith(MAIN_COMMANDS[1]) or content == MAIN_COMMANDS[1] or content == MAIN_COMMANDS[5]:  
+            nb = 3
+            self.get_card_list(nb)
+            message_content = self.card_name()
+            files = [discord.File(self.url_img[i]) for i in range(nb)]
+            await self.message.reply(content=message_content, files=files)
 
-        elif self.message.content.startswith(MAIN_COMMANDS[2]) or content == MAIN_COMMANDS[2]: 
-            self.get_card_list(6)
-            await self.message.channel.send(self.card_name())
-            files = []
-            for i in range(6):
-                files.append(discord.File(self.url_img[i]))
-            await self.message.channel.send(files=files)
+        elif self.message.content.startswith(MAIN_COMMANDS[2]) or content == MAIN_COMMANDS[2] or content == MAIN_COMMANDS[6]: 
+            nb = 6
+            self.get_card_list(nb)
+            message_content = self.card_name()
+            files = [discord.File(self.url_img[i]) for i in range(nb)]
+            await self.message.reply(content=message_content, files=files)
 
-        elif self.message.content.startswith(MAIN_COMMANDS[3]) or content == MAIN_COMMANDS[3]:  
-            self.get_card_list(9)
-            await self.message.channel.send(self.card_name())
-            files = []
-            for i in range(9):
-                files.append(discord.File(self.url_img[i]))
-            await self.message.channel.send(files=files)
+        elif self.message.content.startswith(MAIN_COMMANDS[3]) or content == MAIN_COMMANDS[3] or content == MAIN_COMMANDS[7]:  
+            nb = 9
+            self.get_card_list(nb)
+            message_content = self.card_name()
+            files = [discord.File(self.url_img[i]) for i in range(nb)]
+            await self.message.reply(content=message_content, files=files)
 
         else:
             # response = self.random_replies()
-            # await self.message.channel.send(response)
+            # await self.message.reply(response)
             return

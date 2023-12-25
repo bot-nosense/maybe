@@ -10,3 +10,11 @@ RANDOM_QOUTE = [
     'lờ mao',
     'Mình không phải là người kiên nhẫn, nhưng cũng có thể mắng một người rất lâu.',
 ]
+
+# QOUTE = {
+#     ['xin lỗi', 'Xin lỗi', 'sr'], ['xin lỗi mồm thế thôi à?', 'xin lỗi thế là xong à', 'xin lỗi cc'],
+#     ['cc'], ['gì, mún ăn hoa cải không'],
+#     ['xl'], [':>'],
+#     ['dme'], ['clg'], # Mây dạy bot
+#     ['cám ơn', 'thanks', 'than kìu'], ['cám ơn mồm thế à']
+# }
