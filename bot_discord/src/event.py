@@ -6,8 +6,13 @@ from src.constants.tarot import DATABASE_JSON
 from src.constants.qoute import RANDOM_QOUTE
 from src.constants.commands import *
 from dotenv import load_dotenv
+from collections import defaultdict
+from datetime import datetime, timedelta
 
 load_dotenv()
+
+
+
 
 
 class Event:
@@ -31,7 +36,6 @@ class Event:
         # split commands, self.message
         
         pass
-    
 
     def tag_user(self):
         return self.message.author.mention
@@ -41,27 +45,42 @@ class Event:
         keys = set()
         while len(keys) < count:
             num = rd.randint(1, 158)
-            if num % 2 != 0 and num - 1 not in keys:
+            if num % 2 != 0 and num + 1 not in keys: # không có cùng lá khác status trong list
                 keys.add(num)
-            keys.add(num)
+            elif num not in keys:
+                keys.add(num)
         keys = list(keys)
 
         selected_values = [DATABASE_JSON[str(key)] for key in keys if str(key) in DATABASE_JSON]
         self.names = [i[1] for i in selected_values]
         self.url_img = [( str(os.getenv('DATABASE_VISION_TAROT')) + str(i[0]) ) for i in selected_values]
 
-    def card_name(self):
-        names = [name for name in self.names]
-        result = ', \n'.join(names)
-        return result
+    # def card_name(self):
+    #     names = [name for name in self.names]
+    #     result = ', \n'.join(names)
+    #     return result
     
+    # def card_image(self):
+    #     paths = [path for path in self.url_img]
+    #     result = ', \n'.join(paths)
+    #     return result
+
+    def format_items(self, items):
+        formatted_items = ', \n'.join(items)
+        return formatted_items
+
+    def card_name(self):
+        return self.format_items(self.names)
+
     def card_image(self):
-        paths = [path for path in self.url_img]
-        result = ', \n'.join(paths)
-        return result
+        return self.format_items(self.url_img)
 
     def random_replies(self):
         return rd.choice(RANDOM_QOUTE)
+
+    def save_file(self, question):
+        with open('data/request_tarot/1.txt', 'a', encoding='utf-8') as f:
+            f.write(question + '\n')
 
     async def bot_replies(self):
         if self.message.author == self.client.user:
@@ -69,14 +88,16 @@ class Event:
 
         content = self.check_validate_commands()
 
-        if self.message.content.startswith(MAIN_COMMANDS[0]) or content == MAIN_COMMANDS[0] or content == MAIN_COMMANDS[4]:  
+        if self.message.content.startswith(MAIN_COMMANDS[0]) or content == MAIN_COMMANDS[0] or content == MAIN_COMMANDS[4]: 
+            self.save_file(self.message.content) 
             nb = 1
             self.get_card_list(nb)
             message_content = self.card_name()
             files = [discord.File(self.url_img[i]) for i in range(nb)]
             await self.message.reply(content=message_content, files=files)
 
-        elif self.message.content.startswith(MAIN_COMMANDS[1]) or content == MAIN_COMMANDS[1] or content == MAIN_COMMANDS[5]:  
+        elif self.message.content.startswith(MAIN_COMMANDS[1]) or content == MAIN_COMMANDS[1] or content == MAIN_COMMANDS[5]:
+            self.save_file(self.message.content)   
             nb = 3
             self.get_card_list(nb)
             message_content = self.card_name()
@@ -84,6 +105,7 @@ class Event:
             await self.message.reply(content=message_content, files=files)
 
         elif self.message.content.startswith(MAIN_COMMANDS[2]) or content == MAIN_COMMANDS[2] or content == MAIN_COMMANDS[6]: 
+            self.save_file(self.message.content) 
             nb = 6
             self.get_card_list(nb)
             message_content = self.card_name()
@@ -91,6 +113,7 @@ class Event:
             await self.message.reply(content=message_content, files=files)
 
         elif self.message.content.startswith(MAIN_COMMANDS[3]) or content == MAIN_COMMANDS[3] or content == MAIN_COMMANDS[7]:  
+            self.save_file(self.message.content) 
             nb = 9
             self.get_card_list(nb)
             message_content = self.card_name()
