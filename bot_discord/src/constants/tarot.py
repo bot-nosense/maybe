@@ -1,5 +1,5 @@
 
-VISION_TAROT_JSON = {
+DATABASE_JSON = {
   "1": [
     "1.jpg",
     "The Fool - xuôi"
@@ -18,171 +18,171 @@ VISION_TAROT_JSON = {
   ],
   "5": [
     "5.jpg",
-    "Wheel Of Fortune - xuôi"
+    "The High Priestess - xuôi"
   ],
   "6": [
     "6.jpg",
-    "Wheel Of Fortune - ngược"
+    "The High Priestess - ngược"
   ],
   "7": [
     "7.jpg",
-    "Justice - xuôi"
+    "The Empress - xuôi"
   ],
   "8": [
     "8.jpg",
-    "Justice - ngược"
+    "The Empress - ngược"
   ],
   "9": [
     "9.jpg",
-    "The Hanged Man - xuôi"
+    "The Emperor - xuôi"
   ],
   "10": [
     "10.jpg",
-    "The Hanged Man - ngược"
+    "The Emperor - ngược"
   ],
   "11": [
     "11.jpg",
-    "Death - xuôi"
+    "The Hierophant - xuôi"
   ],
   "12": [
     "12.jpg",
-    "Death - ngược"
+    "The Hierophant - ngược"
   ],
   "13": [
     "13.jpg",
-    "Temperance - xuôi"
+    "The Lovers - xuôi"
   ],
   "14": [
     "14.jpg",
-    "Temperance - ngược"
+    "The Lovers - ngược"
   ],
   "15": [
     "15.jpg",
-    "The Devil - xuôi"
+    "The Chariot - xuôi"
   ],
   "16": [
     "16.jpg",
-    "The Devil - ngược"
+    "The Chariot - ngược"
   ],
   "17": [
     "17.jpg",
-    "The Tower - xuôi"
+    "Strength - xuôi"
   ],
   "18": [
     "18.jpg",
-    "The Tower - ngược"
+    "Strength - ngược"
   ],
   "19": [
     "19.jpg",
-    "The Star - xuôi"
+    "The Hermit - xuôi"
   ],
   "20": [
     "20.jpg",
-    "The Star - ngược"
+    "The Hermit - ngược"
   ],
   "21": [
     "21.jpg",
-    "The Moon - xuôi"
+    "The Wheel - xuôi"
   ],
   "22": [
     "22.jpg",
-    "The Moon - ngược"
+    "The Wheel - ngược"
   ],
   "23": [
     "23.jpg",
-    "The Sun - xuôi"
+    "Justice - xuôi"
   ],
   "24": [
     "24.jpg",
-    "The Sun - ngược"
+    "Justice - ngược"
   ],
   "25": [
     "25.jpg",
-    "The High Priestess - xuôi"
+    "The Hanged Man - xuôi"
   ],
   "26": [
     "26.jpg",
-    "The High Priestess - ngược"
+    "The Hanged Man - ngược"
   ],
   "27": [
     "27.jpg",
-    "Judgement - xuôi"
+    "Death - xuôi"
   ],
   "28": [
     "28.jpg",
-    "Judgement - ngược"
+    "Death - ngược"
   ],
   "29": [
     "29.jpg",
-    "The World - xuôi"
+    "Temperance - xuôi"
   ],
   "30": [
     "30.jpg",
-    "The World - ngược"
+    "Temperance - ngược"
   ],
   "31": [
     "31.jpg",
-    "The Gift - xuôi"
+    "The Devil - xuôi"
   ],
   "32": [
     "32.jpg",
-    "The Gift - ngược"
+    "The Devil - ngược"
   ],
   "33": [
     "33.jpg",
-    "The Empress - xuôi"
+    "The Tower - xuôi"
   ],
   "34": [
     "34.jpg",
-    "The Empress - ngược"
+    "The Tower - ngược"
   ],
   "35": [
     "35.jpg",
-    "The Emperor - xuôi"
+    "The Star - xuôi"
   ],
   "36": [
     "36.jpg",
-    "The Emperor - ngược"
+    "The Star - ngược"
   ],
   "37": [
     "37.jpg",
-    "The Hierophant - xuôi"
+    "The Moon - xuôi"
   ],
   "38": [
     "38.jpg",
-    "The Hierophant - ngược"
+    "The Moon - ngược"
   ],
   "39": [
     "39.jpg",
-    "The Lovers - xuôi"
+    "The Sun - xuôi"
   ],
   "40": [
     "40.jpg",
-    "The The Hierophant - ngược"
+    "The Sun - ngược"
   ],
   "41": [
     "41.jpg",
-    "The Chariot - xuôi"
+    "Judgement - xuôi"
   ],
   "42": [
     "42.jpg",
-    "The Chariot - ngược"
+    "Judgement - ngược"
   ],
   "43": [
     "43.jpg",
-    "Strength - xuôi"
+    "The World - xuôi"
   ],
   "44": [
     "44.jpg",
-    "Strength - ngược"
+    "The World - ngược"
   ],
   "45": [
     "45.jpg",
-    "The Hermit - xuôi"
+    "The Gift - xuôi"
   ],
   "46": [
     "46.jpg",
-    "The Hermit - ngược"
+    "The Gift - ngược"
   ],
   "47": [
     "47.jpg",

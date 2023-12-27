@@ -2,7 +2,7 @@ import random as rd
 import os
 import discord
 
-from src.constants.vison_tarot import VISION_TAROT_JSON
+from src.constants.tarot import DATABASE_JSON
 from src.constants.qoute import RANDOM_QOUTE
 from src.constants.commands import *
 from dotenv import load_dotenv
@@ -37,8 +37,16 @@ class Event:
         return self.message.author.mention
 
     def get_card_list(self, count):
-        keys = [rd.randint(1, 158) for _ in range(count)]
-        selected_values = [VISION_TAROT_JSON[str(key)] for key in keys if str(key) in VISION_TAROT_JSON]
+        
+        keys = set()
+        while len(keys) < count:
+            num = rd.randint(1, 158)
+            if num % 2 != 0 and num - 1 not in keys:
+                keys.add(num)
+            keys.add(num)
+        keys = list(keys)
+
+        selected_values = [DATABASE_JSON[str(key)] for key in keys if str(key) in DATABASE_JSON]
         self.names = [i[1] for i in selected_values]
         self.url_img = [( str(os.getenv('DATABASE_VISION_TAROT')) + str(i[0]) ) for i in selected_values]
 
