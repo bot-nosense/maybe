@@ -47,23 +47,13 @@ class Event:
             num = rd.randint(1, 158)
             if num % 2 != 0 and num + 1 not in keys: # không có cùng lá khác status trong list
                 keys.add(num)
-            elif num not in keys:
+            elif num - 1 not in keys:
                 keys.add(num)
         keys = list(keys)
 
         selected_values = [DATABASE_JSON[str(key)] for key in keys if str(key) in DATABASE_JSON]
         self.names = [i[1] for i in selected_values]
         self.url_img = [( str(os.getenv('DATABASE_VISION_TAROT')) + str(i[0]) ) for i in selected_values]
-
-    # def card_name(self):
-    #     names = [name for name in self.names]
-    #     result = ', \n'.join(names)
-    #     return result
-    
-    # def card_image(self):
-    #     paths = [path for path in self.url_img]
-    #     result = ', \n'.join(paths)
-    #     return result
 
     def format_items(self, items):
         formatted_items = ', \n'.join(items)
@@ -115,6 +105,22 @@ class Event:
         elif self.message.content.startswith(MAIN_COMMANDS[3]) or content == MAIN_COMMANDS[3] or content == MAIN_COMMANDS[7]:  
             self.save_file(self.message.content) 
             nb = 9
+            self.get_card_list(nb)
+            message_content = self.card_name()
+            files = [discord.File(self.url_img[i]) for i in range(nb)]
+            await self.message.reply(content=message_content, files=files)
+
+        elif self.message.content.startswith(MAIN_COMMANDS[3]) or content == MAIN_COMMANDS[10]:  
+            self.save_file(self.message.content) 
+            nb = 12
+            self.get_card_list(nb)
+            message_content = self.card_name()
+            files = [discord.File(self.url_img[i]) for i in range(nb)]
+            await self.message.reply(content=message_content, files=files)
+
+        elif self.message.content.startswith(MAIN_COMMANDS[3]) or content == MAIN_COMMANDS[8] or content == MAIN_COMMANDS[9]:  
+            self.save_file(self.message.content) 
+            nb = 7
             self.get_card_list(nb)
             message_content = self.card_name()
             files = [discord.File(self.url_img[i]) for i in range(nb)]
