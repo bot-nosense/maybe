@@ -1,7 +1,7 @@
 # maybe 
 
 Đây là Mây, 1 bot tarot.    
-Mây là tên người yêu mình, giờ thì các thím biết sao bot lại tên là Mây rồi đấy :vv 
+Mây là tên người yêu mình, giờ thì các thím biết sao bot lại tên là Mây rồi đấy :vv   
 Mây là 1 nhánh nhỏ trong dự án NLP tarot của mình.      
 Mây được deploy trên nền tảng Discord. Các thím có thể thêm Mây vào server của mình tại đây:   
 Các tính năng chính có thể kể tới như:
