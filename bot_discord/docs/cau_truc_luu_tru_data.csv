@@ -1,0 +1,8 @@
+,,,Data Types,Example
+DATABASE_JSON,,,Dictionary,
+,key,Số thứ tự của lá bài,String,"""123432"""
+,value,,List,
+,,Địa chỉ lưu ảnh,String,1.jpg'
+,,Tên thẻ tarot,String,The Fool - xuôi'
+,,Yes or No,String,Thông thường là Có'
+,,Nghĩa của lá bài,Dictionary,
