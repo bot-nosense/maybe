@@ -2,11 +2,19 @@
 DATABASE_JSON = {
   "1": [
     "1.jpg",
-    "The Fool - xuôi"
+    "The Fool - xuôi",
+    'Thông thường là [Có], nhưng bạn vẫn nên rút thêm các lá ngoại cảnh nữa để có kết quả chính xác hơn.\n ' +
+    'Đối với câu hỏi về việc tôi có 1 công việc mới hay không, nó sẽ là [Có], nhưng với câu hỏi dạng tôi có nên đầu tư không, thì phần lớn câu trả lời sẽ là [Có] nên đầu tư, nhưng hãy rút thêm điểm lợi hay điểm hại của việc đầu tư này.',
+    ''
   ],
   "2": [
     "2.jpg",
-    "The Fool - ngược"
+    "The Fool - ngược",
+    {
+      'công việc':'',
+      'tình cảm': '',
+      'other': ''
+    }
   ],
   "3": [
     "3.jpg",
