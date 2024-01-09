@@ -126,6 +126,14 @@ class Event:
             files = [discord.File(self.url_img[i]) for i in range(nb)]
             await self.message.reply(content=message_content, files=files)
 
+        elif self.message.content.startswith(MAIN_COMMANDS[3]) or content == MAIN_COMMANDS[11] or content == MAIN_COMMANDS[12]:  
+            self.save_file(self.message.content) 
+            nb = 5
+            self.get_card_list(nb)
+            message_content = self.card_name()
+            files = [discord.File(self.url_img[i]) for i in range(nb)]
+            await self.message.reply(content=message_content, files=files)
+
         else:
             # response = self.random_replies()
             # await self.message.reply(response)
