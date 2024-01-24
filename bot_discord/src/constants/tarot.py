@@ -11,6 +11,7 @@ DATABASE_JSON = {
   "1": [
     "1.jpg",
     "The Fool - xuôi",
+    "Yes", 
     {
       'công việc':'Có',
       'tình cảm': 'Có',
@@ -22,6 +23,7 @@ DATABASE_JSON = {
   "2": [
     "2.jpg",
     "The Fool - ngược",
+    "No",
     {
       'công việc':'',
       'tình cảm': '',
