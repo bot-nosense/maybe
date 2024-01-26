@@ -42,7 +42,7 @@ async def on_ready():
    
 @client.event
 async def on_message(message):
-    message = await message.channel.fetch_message(message.id) # gets the message with id
+    message = await message.channel.fetch_message(message.id) 
     logging.info(f"User [{message.author.name}] sent: [{message.content}]               - {message}")
     event = Event(message, client)
     # await check_spam(message, message_history)
