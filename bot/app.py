@@ -5,8 +5,7 @@ import datetime
 
 from src.event import Event
 from dotenv import load_dotenv
-from discord.ext import commands
-
+# from discord.ext import commands
 
 
 load_dotenv()
@@ -17,12 +16,11 @@ intents.guilds = True
 intents.reactions = True 
 
 log_format = "%Y-%m-%d %H:%M:%S"
-
 client = discord.Client(intents=intents)
 
-message_history = {}
-spam_threshold = 4  # Số tin nhắn tối đa trong khoảng thời gian để coi là spam
-spam_duration = 4  # Thời gian (giây) để xem xét số tin nhắn
+# message_history = {}
+# spam_threshold = 4  # Số tin nhắn tối đa trong khoảng thời gian để coi là spam
+# spam_duration = 4  # Thời gian (giây) để xem xét số tin nhắn
 
 
 async def check_spam(message, message_history):

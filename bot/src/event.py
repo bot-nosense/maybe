@@ -29,8 +29,8 @@ class Event:
     def get_path_img(self):
         return self.url_img
 
-    def check_validate_commands(self):
-        return next((i for i in MAIN_COMMANDS if i in self.message.content), None)
+    def check_validate_commands(self, commands):
+        return next((i for i in commands if i in self.message.content), None)
 
     def concat_commands(self):
         # split commands, self.message
@@ -76,75 +76,77 @@ class Event:
     async def bot_replies(self):
 
         input_message = self.message.content.lower()
-        content = self.check_validate_commands()
+        content = self.check_validate_commands(MAIN_COMMANDS)
+        blame_content = self.check_validate_commands(blame.keys())
         request_user_path=os.getenv('REQUEST_USER_PATH')
 
         if self.message.author == self.client.user:
             return 
         
-        for keyword, response in blame.items():
-            if input_message.startswith(keyword):
-                message_content = self.random_replies(response)
-                await self.message.reply(content=message_content)
-                break
+        if self.message.content != None:
+            for keyword, response in blame.items():
+                if input_message.startswith(keyword) or blame_content == keyword:
+                    message_content = self.random_replies(response)
+                    await self.message.reply(content=message_content)
+                    break
 
-        if self.message.content.startswith(MAIN_COMMANDS[0]) or content == MAIN_COMMANDS[0] or content == MAIN_COMMANDS[4]: 
-            self.save_file(self.message.content, request_user_path) 
-            nb = 1
-            self.get_card_list(nb)
-            message_content = self.card_name()
-            files = [discord.File(self.url_img[i]) for i in range(nb)]
-            await self.message.reply(content=message_content, files=files)
+            if self.message.content.startswith(MAIN_COMMANDS[0]) or content == MAIN_COMMANDS[0] or content == MAIN_COMMANDS[4]: 
+                self.save_file(self.message.content, request_user_path) 
+                nb = 1
+                self.get_card_list(nb)
+                message_content = self.card_name()
+                files = [discord.File(self.url_img[i]) for i in range(nb)]
+                await self.message.reply(content=message_content, files=files)
 
-        elif self.message.content.startswith(MAIN_COMMANDS[1]) or content == MAIN_COMMANDS[1] or content == MAIN_COMMANDS[5]:
-            self.save_file(self.message.content, request_user_path)   
-            nb = 3
-            self.get_card_list(nb)
-            message_content = self.card_name()
-            files = [discord.File(self.url_img[i]) for i in range(nb)]
-            await self.message.reply(content=message_content, files=files)
+            elif self.message.content.startswith(MAIN_COMMANDS[1]) or content == MAIN_COMMANDS[1] or content == MAIN_COMMANDS[5]:
+                self.save_file(self.message.content, request_user_path)   
+                nb = 3
+                self.get_card_list(nb)
+                message_content = self.card_name()
+                files = [discord.File(self.url_img[i]) for i in range(nb)]
+                await self.message.reply(content=message_content, files=files)
 
-        elif self.message.content.startswith(MAIN_COMMANDS[2]) or content == MAIN_COMMANDS[2] or content == MAIN_COMMANDS[6]: 
-            self.save_file(self.message.content, request_user_path) 
-            nb = 6
-            self.get_card_list(nb)
-            message_content = self.card_name()
-            files = [discord.File(self.url_img[i]) for i in range(nb)]
-            await self.message.reply(content=message_content, files=files)
+            elif self.message.content.startswith(MAIN_COMMANDS[2]) or content == MAIN_COMMANDS[2] or content == MAIN_COMMANDS[6]: 
+                self.save_file(self.message.content, request_user_path) 
+                nb = 6
+                self.get_card_list(nb)
+                message_content = self.card_name()
+                files = [discord.File(self.url_img[i]) for i in range(nb)]
+                await self.message.reply(content=message_content, files=files)
 
-        elif self.message.content.startswith(MAIN_COMMANDS[3]) or content == MAIN_COMMANDS[3] or content == MAIN_COMMANDS[7]:  
-            self.save_file(self.message.content, request_user_path) 
-            nb = 9
-            self.get_card_list(nb)
-            message_content = self.card_name()
-            files = [discord.File(self.url_img[i]) for i in range(nb)]
-            await self.message.reply(content=message_content, files=files)
+            elif self.message.content.startswith(MAIN_COMMANDS[3]) or content == MAIN_COMMANDS[3] or content == MAIN_COMMANDS[7]:  
+                self.save_file(self.message.content, request_user_path) 
+                nb = 9
+                self.get_card_list(nb)
+                message_content = self.card_name()
+                files = [discord.File(self.url_img[i]) for i in range(nb)]
+                await self.message.reply(content=message_content, files=files)
 
-        elif self.message.content.startswith(MAIN_COMMANDS[3]) or content == MAIN_COMMANDS[10]:  
-            self.save_file(self.message.content, request_user_path) 
-            nb = 12
-            self.get_card_list(nb)
-            message_content = self.card_name()
-            files = [discord.File(self.url_img[i]) for i in range(nb)]
-            await self.message.reply(content=message_content, files=files)
+            elif self.message.content.startswith(MAIN_COMMANDS[3]) or content == MAIN_COMMANDS[10]:  
+                self.save_file(self.message.content, request_user_path) 
+                nb = 12
+                self.get_card_list(nb)
+                message_content = self.card_name()
+                files = [discord.File(self.url_img[i]) for i in range(nb)]
+                await self.message.reply(content=message_content, files=files)
 
-        elif self.message.content.startswith(MAIN_COMMANDS[3]) or content == MAIN_COMMANDS[8] or content == MAIN_COMMANDS[9]:  
-            self.save_file(self.message.content, request_user_path) 
-            nb = 7
-            self.get_card_list(nb)
-            message_content = self.card_name()
-            files = [discord.File(self.url_img[i]) for i in range(nb)]
-            await self.message.reply(content=message_content, files=files)
+            elif self.message.content.startswith(MAIN_COMMANDS[3]) or content == MAIN_COMMANDS[8] or content == MAIN_COMMANDS[9]:  
+                self.save_file(self.message.content, request_user_path) 
+                nb = 7
+                self.get_card_list(nb)
+                message_content = self.card_name()
+                files = [discord.File(self.url_img[i]) for i in range(nb)]
+                await self.message.reply(content=message_content, files=files)
 
-        elif self.message.content.startswith(MAIN_COMMANDS[3]) or content == MAIN_COMMANDS[11] or content == MAIN_COMMANDS[12]:  
-            self.save_file(self.message.content, request_user_path) 
-            nb = 5
-            self.get_card_list(nb)
-            message_content = self.card_name()
-            files = [discord.File(self.url_img[i]) for i in range(nb)]
-            await self.message.reply(content=message_content, files=files)
+            elif self.message.content.startswith(MAIN_COMMANDS[3]) or content == MAIN_COMMANDS[11] or content == MAIN_COMMANDS[12]:  
+                self.save_file(self.message.content, request_user_path) 
+                nb = 5
+                self.get_card_list(nb)
+                message_content = self.card_name()
+                files = [discord.File(self.url_img[i]) for i in range(nb)]
+                await self.message.reply(content=message_content, files=files)
 
-        else:
-            # response = self.random_replies()
-            # await self.message.reply(response)
-            return
+            else:
+                # response = self.random_replies()
+                # await self.message.reply(response)
+                return
