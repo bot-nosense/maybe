@@ -12,6 +12,7 @@ blame = {
     'Xin lỗi': sorry,
     'sr': sorry,
     'cc': char,
+    'ncc': char,
     'dme': 'clg', # Mây dạy bot thế,
     'camon': thanks,
     'thanks': thanks,
