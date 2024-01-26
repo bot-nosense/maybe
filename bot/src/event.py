@@ -2,9 +2,9 @@ import random as rd
 import os
 import discord
 
-from src.constants.tarot import DATABASE_JSON
-from src.constants.qoute import RANDOM_QOUTE
-from bot.data_core.commands import * 
+from data_core.input_data import input_data_json
+# from src.constants.qoute import RANDOM_QOUTE
+from data_core.commands import * 
 from dotenv import load_dotenv
 from collections import defaultdict
 from datetime import datetime, timedelta

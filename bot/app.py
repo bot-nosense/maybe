@@ -48,7 +48,7 @@ async def on_message(message):
     await event.bot_replies()
     
 logging.basicConfig(
-    filename='bot_discord/environment/dev/bot.log', 
+    filename= os.getenv('LOG_PATH'),
     level=logging.DEBUG, 
     format='%(asctime)s: %(message)s', 
     datefmt=log_format,
