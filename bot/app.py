@@ -48,11 +48,11 @@ async def on_message(message):
     await event.bot_replies()
     
 logging.basicConfig(
-    filename='bot_discord/environment/dev/bot.log', 
+    filename= os.getenv('LOG_PATH'),
     level=logging.DEBUG, 
     format='%(asctime)s: %(message)s', 
     datefmt=log_format,
     encoding='utf-8'
 )
-client.run(os.getenv('TOKEN_DISCORD_BOT'), reconnect = True) 
+client.run(os.getenv('TOKEN_DISCORD'), reconnect = True) 
 
