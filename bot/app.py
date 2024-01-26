@@ -54,5 +54,5 @@ logging.basicConfig(
     datefmt=log_format,
     encoding='utf-8'
 )
-client.run(os.getenv('TOKEN_DISCORD_BOT'), reconnect = True) 
+client.run(os.getenv('TOKEN_DISCORD'), reconnect = True) 
 
