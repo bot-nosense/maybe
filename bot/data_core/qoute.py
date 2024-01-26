@@ -6,7 +6,7 @@ char =  [':>', ':))))', 'xD', 'oke bae', 'thôi ôm im mẹ mồm đi']
 thanks = ['cám ơn mồm thế à']
 
 
-BLAME = {
+blame = {
     'xinloi': sorry,
     'xin lỗi': sorry,
     'Xin lỗi': sorry,

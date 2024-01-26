@@ -3,7 +3,7 @@ import os
 import discord
 
 from data_core.input_data import input_data_json
-# from src.constants.qoute import RANDOM_QOUTE
+from data_core.qoute import blame
 from data_core.commands import * 
 from dotenv import load_dotenv
 from collections import defaultdict
@@ -65,8 +65,8 @@ class Event:
     def card_image(self):
         return self.format_items(self.url_img)
 
-    def random_replies(self):
-        # return rd.choice(RANDOM_QOUTE)
+    def random_replies(self, list):
+        return rd.choice(list)
         pass
 
     def save_file(self, question, url):
@@ -74,11 +74,19 @@ class Event:
             f.write(question + '\n')
 
     async def bot_replies(self):
-        if self.message.author == self.client.user:
-            return 
 
+        input_message = self.message.content.lower()
         content = self.check_validate_commands()
         request_user_path=os.getenv('REQUEST_USER_PATH')
+
+        if self.message.author == self.client.user:
+            return 
+        
+        for keyword, response in blame.items():
+            if input_message.startswith(keyword):
+                message_content = self.random_replies(response)
+                await self.message.reply(content=message_content)
+                break
 
         if self.message.content.startswith(MAIN_COMMANDS[0]) or content == MAIN_COMMANDS[0] or content == MAIN_COMMANDS[4]: 
             self.save_file(self.message.content, request_user_path) 
