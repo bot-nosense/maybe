@@ -66,7 +66,8 @@ class Event:
         return self.format_items(self.url_img)
 
     def random_replies(self):
-        return rd.choice(RANDOM_QOUTE)
+        # return rd.choice(RANDOM_QOUTE)
+        pass
 
     def save_file(self, question, url):
         with open(url, 'a', encoding='utf-8') as f:
@@ -77,7 +78,7 @@ class Event:
             return 
 
         content = self.check_validate_commands()
-        request_user_path=os.getenv('REQUEST_USER')
+        request_user_path=os.getenv('REQUEST_USER_PATH')
 
         if self.message.content.startswith(MAIN_COMMANDS[0]) or content == MAIN_COMMANDS[0] or content == MAIN_COMMANDS[4]: 
             self.save_file(self.message.content, request_user_path) 
