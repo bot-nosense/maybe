@@ -5,7 +5,7 @@ import datetime
 
 from src.event import Event
 from dotenv import load_dotenv
-from discord.ext import commands
+# from discord.ext import commands
 
 
 load_dotenv()

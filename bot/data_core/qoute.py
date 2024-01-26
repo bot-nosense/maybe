@@ -9,7 +9,6 @@ ccc = ['con cak', 'con m* mày']
 blame = {
     'xinloi': sorry,
     'xin lỗi': sorry,
-    'Xin lỗi': sorry,
     'sr': sorry,
     'cc': char,
     'ncc': char,
