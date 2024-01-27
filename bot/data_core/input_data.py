@@ -4,10 +4,12 @@ input_data_json = {
   "1": [
     "1.jpg",
     "The Fool - xuôi",
+    "Yes"
   ],
   "2": [
     "2.jpg",
     "The Fool - ngược",
+    "No"
   ],
   "3": [
     "3.jpg",
