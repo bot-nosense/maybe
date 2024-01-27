@@ -1,0 +1,5 @@
+28-01
+đặt quy tắc cho user gọi bot -> lưu lại câu hỏi
+viết lại thuật toán yes no
+viết nghĩa core yes no cho từng lá bài
+tạo mảng bổ sung nghĩa cho bot reply
