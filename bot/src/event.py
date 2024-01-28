@@ -8,10 +8,9 @@ from data_core.commands import *
 from dotenv import load_dotenv
 from collections import defaultdict
 from datetime import datetime, timedelta
+from algorithm_core.yes_no_questions import YesNoQuestions
 
 load_dotenv()
-
-
 
 
 
@@ -94,7 +93,12 @@ class Event:
                 self.save_file(self.message.content, request_user_path) 
                 nb = 1
                 self.get_card_list(nb)
-                message_content = self.card_name()
+                YesNo = YesNoQuestions(self.get_card_name())
+
+                yesno_content = YesNo.face_up()
+                card_name_content = self.card_name()
+                message_content = f'{card_name_content}\nThese {nb} cards mean: {yesno_content}'
+
                 files = [discord.File(self.url_img[i]) for i in range(nb)]
                 await self.message.reply(content=message_content, files=files)
 
@@ -102,7 +106,12 @@ class Event:
                 self.save_file(self.message.content, request_user_path)   
                 nb = 3
                 self.get_card_list(nb)
-                message_content = self.card_name()
+                YesNo = YesNoQuestions(self.get_card_name())
+                
+                yesno_content = YesNo.face_up()
+                card_name_content = self.card_name()
+                message_content = f'{card_name_content}\nThese {nb} cards mean: {yesno_content}' 
+
                 files = [discord.File(self.url_img[i]) for i in range(nb)]
                 await self.message.reply(content=message_content, files=files)
 
@@ -142,7 +151,12 @@ class Event:
                 self.save_file(self.message.content, request_user_path) 
                 nb = 5
                 self.get_card_list(nb)
-                message_content = self.card_name()
+                YesNo = YesNoQuestions(self.get_card_name())
+                
+                yesno_content = YesNo.face_up()
+                card_name_content = self.card_name()
+                message_content = f'{card_name_content}\nThese {nb} cards mean: {yesno_content}'
+
                 files = [discord.File(self.url_img[i]) for i in range(nb)]
                 await self.message.reply(content=message_content, files=files)
 
