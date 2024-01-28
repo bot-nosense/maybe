@@ -1,10 +1,13 @@
 # bot reply ...
 
-sorry = ['xin lỗi mồm thế thôi à?', 'xin lỗi thế là xong à', 'xin lỗi cc']
-threatening = ['gì, mún ăn hoa cải không']
-char =  [':>', ':))))', 'xD', 'oke bae', 'thôi ôm im mẹ mồm đi', 'cút', 'thèm dòn à', 'nói lằm nói lốn']
+sorry = ['xin lỗi mồm thế thôi à?', 'xin lỗi cc'] #, 'xin lỗi thế là xong à'
+threatening = ['gì, mún ăn hoa cải không', 'thèm đòn à']
+char =  [':>', ':))))', 'xD', 'oke bae', 'thôi ôm im mẹ mồm đi', 'cút', 'nói lằm nói lốn']
 thanks = ['cám ơn mồm thế à']
-ccc = ['con cak', 'con m* mày']
+ccc = ['con cak', 'cút ra ngoài kia']
+meii_train_bot = ['clg']
+haha = ['em cười là cười cái gì?']
+bot = ['nài, nhìn lại mặt hàng đi nhé', 'nói xấu gì nhau à']
 
 blame = {
     'xinloi': sorry,
@@ -12,7 +15,7 @@ blame = {
     'sr': sorry,
     'cc': char,
     'ncc': char,
-    'dme': 'clg', # Mây dạy bot thế,
+    'dme': meii_train_bot, # Mây dạy bot thế,
     'camon': thanks,
     'thanks': thanks,
     'than kìu': thanks,
@@ -20,6 +23,9 @@ blame = {
     'địt mẹ m': char,
     'cút': char,
     'súc vật': char,
+    'condime': char,
+    'haha': haha,
+    'bot lỗi': bot,
     # 'không ngờ': 'ngờ' + ccc,
     # 'chó': 'chó' + ccc,
 }
