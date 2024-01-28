@@ -97,7 +97,7 @@ class Event:
 
                 yesno_content = YesNo.face_up()
                 card_name_content = self.card_name()
-                message_content = f'{yesno_content}\n{card_name_content}'
+                message_content = f'{card_name_content}\nThese {nb} cards mean: {yesno_content}'
 
                 files = [discord.File(self.url_img[i]) for i in range(nb)]
                 await self.message.reply(content=message_content, files=files)
@@ -110,7 +110,7 @@ class Event:
                 
                 yesno_content = YesNo.face_up()
                 card_name_content = self.card_name()
-                message_content = f'{card_name_content}\n{nb} lá bài này có nghĩa là: {yesno_content}'
+                message_content = f'{card_name_content}\nThese {nb} cards mean: {yesno_content}' 
 
                 files = [discord.File(self.url_img[i]) for i in range(nb)]
                 await self.message.reply(content=message_content, files=files)
@@ -155,7 +155,7 @@ class Event:
                 
                 yesno_content = YesNo.face_up()
                 card_name_content = self.card_name()
-                message_content = f'{yesno_content}\n{card_name_content}'
+                message_content = f'{card_name_content}\nThese {nb} cards mean: {yesno_content}'
 
                 files = [discord.File(self.url_img[i]) for i in range(nb)]
                 await self.message.reply(content=message_content, files=files)
