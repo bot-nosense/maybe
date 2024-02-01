@@ -1,6 +1,7 @@
 import random as rd
 import os
 import discord as dc
+import logging
 
 from data_core.input_data import input_data_json
 from data_core.qoute import blame
@@ -72,6 +73,13 @@ class Event:
         with open(url, 'a', encoding='utf-8') as f:
             f.write(question + '\n')
 
+    async def check_allowed_server(self):
+        if str(self.message.guild.id) != os.getenv('ALLOWED_SERVER_ID') :
+            message_content = "Nhắn riêng với mình hoặc join server này: ", os.getenv('DISCORD_SERVER')
+            await self.message.reply(content=message_content)
+            return False
+        return True
+
     async def bot_replies(self):
 
         input_message = self.message.content.lower()
@@ -83,6 +91,14 @@ class Event:
             return 
         
         if self.message.content != None:
+
+            logging.info(f"User [{self.message.author.name}] sent: [{self.message.content}]               - {self.message}")
+
+            # Must be an official server
+            if self.message.guild is not None:
+                if not await self.check_allowed_server():
+                    return
+
             for keyword, response in blame.items():
                 if input_message.startswith(keyword) or blame_content == keyword:
                     message_content = self.random_replies(response)
@@ -164,3 +180,15 @@ class Event:
                 # response = self.random_replies()
                 # await self.message.reply(response)
                 return
+            
+    async def check_spam(message, message_history):
+    # author_id = message.author.id
+    # author_id = str(author_id)
+    # if author_id not in message_history:
+    #     message_history[author_id] = [] 
+    # message_history[author_id].append(message.content)  
+    # if len(message_history[author_id]) > spam_threshold:
+    #     message_history[author_id] = []  
+    #     await message.channel.send(f'<@{author_id}>, nhắn ít thôi, thích spam không')
+        pass
+
