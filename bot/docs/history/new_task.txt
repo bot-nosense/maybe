@@ -3,3 +3,7 @@
 viết lại thuật toán yes no
 viết nghĩa core yes no cho từng lá bài
 tạo mảng bổ sung nghĩa cho bot reply
+
+01-02
+kéo NLP cho user định danh, set thử API GPT 4 cho Maybe
+thu thập data từ gpt 4, mapping cách đọc tarot
