@@ -1,6 +1,6 @@
 import random as rd
 import os
-import discord
+import discord as dc
 
 from data_core.input_data import input_data_json
 from data_core.qoute import blame
@@ -99,7 +99,7 @@ class Event:
                 card_name_content = self.card_name()
                 message_content = f'{card_name_content}\nThese {nb} cards mean: {yesno_content}'
 
-                files = [discord.File(self.url_img[i]) for i in range(nb)]
+                files = [dc.File(self.url_img[i]) for i in range(nb)]
                 await self.message.reply(content=message_content, files=files)
 
             elif self.message.content.startswith(MAIN_COMMANDS[1]) or content == MAIN_COMMANDS[1] or content == MAIN_COMMANDS[5]:
@@ -112,7 +112,7 @@ class Event:
                 card_name_content = self.card_name()
                 message_content = f'{card_name_content}\nThese {nb} cards mean: {yesno_content}' 
 
-                files = [discord.File(self.url_img[i]) for i in range(nb)]
+                files = [dc.File(self.url_img[i]) for i in range(nb)]
                 await self.message.reply(content=message_content, files=files)
 
             elif self.message.content.startswith(MAIN_COMMANDS[2]) or content == MAIN_COMMANDS[2] or content == MAIN_COMMANDS[6]: 
@@ -120,7 +120,7 @@ class Event:
                 nb = 6
                 self.get_card_list(nb)
                 message_content = self.card_name()
-                files = [discord.File(self.url_img[i]) for i in range(nb)]
+                files = [dc.File(self.url_img[i]) for i in range(nb)]
                 await self.message.reply(content=message_content, files=files)
 
             elif self.message.content.startswith(MAIN_COMMANDS[3]) or content == MAIN_COMMANDS[3] or content == MAIN_COMMANDS[7]:  
@@ -128,7 +128,7 @@ class Event:
                 nb = 9
                 self.get_card_list(nb)
                 message_content = self.card_name()
-                files = [discord.File(self.url_img[i]) for i in range(nb)]
+                files = [dc.File(self.url_img[i]) for i in range(nb)]
                 await self.message.reply(content=message_content, files=files)
 
             elif self.message.content.startswith(MAIN_COMMANDS[3]) or content == MAIN_COMMANDS[10]:  
@@ -136,7 +136,7 @@ class Event:
                 nb = 12
                 self.get_card_list(nb)
                 message_content = self.card_name()
-                files = [discord.File(self.url_img[i]) for i in range(nb)]
+                files = [dc.File(self.url_img[i]) for i in range(nb)]
                 await self.message.reply(content=message_content, files=files)
 
             elif self.message.content.startswith(MAIN_COMMANDS[3]) or content == MAIN_COMMANDS[8] or content == MAIN_COMMANDS[9]:  
@@ -144,7 +144,7 @@ class Event:
                 nb = 7
                 self.get_card_list(nb)
                 message_content = self.card_name()
-                files = [discord.File(self.url_img[i]) for i in range(nb)]
+                files = [dc.File(self.url_img[i]) for i in range(nb)]
                 await self.message.reply(content=message_content, files=files)
 
             elif self.message.content.startswith(MAIN_COMMANDS[3]) or content == MAIN_COMMANDS[11] or content == MAIN_COMMANDS[12]:  
@@ -157,7 +157,7 @@ class Event:
                 card_name_content = self.card_name()
                 message_content = f'{card_name_content}\nThese {nb} cards mean: {yesno_content}'
 
-                files = [discord.File(self.url_img[i]) for i in range(nb)]
+                files = [dc.File(self.url_img[i]) for i in range(nb)]
                 await self.message.reply(content=message_content, files=files)
 
             else:

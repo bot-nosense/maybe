@@ -10,8 +10,8 @@ haha = ['em cười là cười cái gì?']
 bot = ['nài, nhìn lại mặt hàng đi nhé', 'nói xấu gì nhau à']
 
 blame = {
-    'xinloi': sorry,
-    'xin lỗi': sorry,
+    # 'xinloi': sorry,
+    # 'xin lỗi': sorry,
     'sr': sorry,
     'cc': char,
     'ncc': char,
@@ -19,7 +19,7 @@ blame = {
     'camon': thanks,
     'thanks': thanks,
     'than kìu': thanks,
-    'ok': char,
+    # 'ok': char,
     'địt mẹ m': char,
     'cút': char,
     'súc vật': char,
