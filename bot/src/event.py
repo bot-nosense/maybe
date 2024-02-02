@@ -17,68 +17,83 @@ load_dotenv()
 
 class Event:
 
+
     def __init__ (self, message, client):
         self.message = message
         self.client = client
         self.names = []
-        self.url_img = []
+        self.img_path = []
 
+
+    # List name card
     def get_card_name(self):
         return self.names
 
-    def get_path_img(self):
-        return self.url_img
 
+    # List img path
+    def get_img_path(self):
+        return self.img_path
+
+
+    # Check keywords are in the question
     def check_validate_commands(self, commands):
         return next((i for i in commands if i in self.message.content), None)
 
-    def concat_commands(self):
-        # split commands, self.message
-        
-        pass
 
+    # hastag user
     def tag_user(self):
         return self.message.author.mention
 
+
+    # Add value to the name[] and img_url[]
     def get_card_list(self, count):
         
         keys = set()
         while len(keys) < count:
             num = rd.randint(1, 158)
-            if num % 2 != 0 and num + 1 not in keys: # không có cùng lá khác status trong list
+            if num % 2 != 0 and num + 1 not in keys: 
                 keys.add(num)
             elif num - 1 not in keys:
                 keys.add(num)
         keys = list(keys)
 
-        selected_values = [input_data_json[str(key)] for key in keys if str(key) in input_data_json]
-        self.names = [i[1] for i in selected_values]
-        self.url_img = [( str(os.getenv('DATABASE_VISION_TAROT')) + str(i[0]) ) for i in selected_values]
+        cards = [input_data_json[str(key)] for key in keys if str(key) in input_data_json]
+        self.names = [i[1] for i in cards]
+        self.img_path = [( str(os.getenv('DATABASE_VISION_TAROT')) + str(i[0]) ) for i in cards]
+
 
     def format_items(self, items):
         formatted_items = ', \n'.join(items)
         return formatted_items
 
+
+    # Return show tarot card name 
     def card_name(self):
         return self.format_items(self.names)
 
+
+    # Return show tarot image path
     def card_image(self):
-        return self.format_items(self.url_img)
+        return self.format_items(self.img_path)
+
 
     def random_replies(self, list):
         return rd.choice(list)
         pass
 
+    
     def save_file(self, question, url):
         with open(url, 'a', encoding='utf-8') as f:
             f.write(question + '\n')
 
+    # The bot is active in the specified server
     async def check_allowed_server(self):
         if str(self.message.guild.id) != os.getenv('ALLOWED_SERVER_ID') :
-            message_content = "Nhắn riêng với mình hoặc join server này: ", os.getenv('DISCORD_SERVER')
-            await self.message.reply(content=message_content)
+            # message_content = "Nhắn riêng với mình hoặc join server này: ", os.getenv('DISCORD_SERVER')
+            # await self.message.reply(content=message_content)
             return False
         return True
+    
 
     async def bot_replies(self):
 
@@ -180,6 +195,7 @@ class Event:
                 # response = self.random_replies()
                 # await self.message.reply(response)
                 return
+        
             
     async def check_spam(message, message_history):
     # author_id = message.author.id
