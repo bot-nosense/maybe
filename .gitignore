@@ -3,3 +3,4 @@ __pycache__/
 *.log
 .env
 bot/data_core/input_data.py
+bot/algorithm_core/

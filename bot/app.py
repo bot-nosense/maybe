@@ -39,6 +39,12 @@ async def on_message(message):
     
 
 # run app
-logging.basicConfig( filename= os.getenv('LOG_PATH'), level=logging.DEBUG,  format='%(asctime)s: %(message)s',  datefmt=log_format, encoding='utf-8' )
+logging.basicConfig( 
+    filename= os.getenv('LOG_PATH'), 
+    level=logging.DEBUG,  
+    format='%(asctime)s: %(message)s',  
+    datefmt=log_format, 
+    encoding='utf-8' 
+)
 client.run(os.getenv('DISCORD_TOKEN'), reconnect = True) 
 
